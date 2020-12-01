@@ -4,6 +4,14 @@
             Graphs which are DAG(Directed Acyclic Graphs) can
             be sorted using Topological sort
 
+            While using dfs we recursively make calls to dfs(child)
+            and ultimately find node on which nobody depends and add it to answer
+
+            While using bfs we add nodes with 0 indegree i.e the ones which 
+            depend on nobody and decrement indegrees of their children by 1
+            and keep adding children whose indegree becomes 0
+            
+
 */
 
 
