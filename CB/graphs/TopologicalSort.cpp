@@ -10,7 +10,7 @@
             While using bfs we add nodes with 0 indegree i.e the ones which 
             depend on nobody and decrement indegrees of their children by 1
             and keep adding children whose indegree becomes 0
-            
+
 
 */
 
@@ -109,8 +109,20 @@ int main(){
       topologicalSortDFS(gr,n);
       cout<<"\ntopological sort using bfs\n";
       topologicalSortBFS(gr,n);
-
-
-
-      
+     
 }
+
+/*
+sample test case
+
+7 8
+7 5
+7 6
+5 4
+4 2
+2 1
+3 1
+6 3
+
+
+*/
